@@ -19,17 +19,22 @@ A **React + TypeScript** app that analyzes which pair of employees has worked to
 
 ## CSV
 
-empId,projectId,from,to
-101,1001,2023-01-01,2023-01-10
-102,1001,2023-01-05,2023-01-15
-103,1002,2023-02-01,2023-02-10
+```
+| empId | projectId | from       | to         |
+| ----- | --------- | ---------- | ---------- |
+| 101   | 1001      | 2023-01-01 | 2023-01-10 |
+| 102   | 1001      | 2023-01-05 | 2023-01-15 |
+| 103   | 1002      | 2023-02-01 | 2023-02-10 |
+```
 
 ## JSON
 
+```
 [
-{ "employeeId": "101", "projectID": "1001", "dateFrom": "2023-01-01", "dateTo": "2023-01-10" },
-{ "empId": "102", "projectId": "1001", "from": "2023-01-05", "to": "2023-01-15" }
+  { "employeeId": "101", "projectID": "1001", "dateFrom": "2023-01-01", "dateTo": "2023-01-10" },
+  { "empId": "102", "projectId": "1001", "from": "2023-01-05", "to": "2023-01-15" }
 ]
+```
 
 ## Excel (XLSX) Example
 
@@ -50,19 +55,21 @@ Can contain invalid or missing data — will be skipped or reported as errors
 
 ## Example Output
 
+```
 {
-"result": {
-"pair": ["101", "102"],
-"projects": [
-{ "projectId": "1001", "days": 5 }
-],
-"totalDays": 5
-},
-"errors": [
-{ "row": 4, "message": "Invalid DateFrom: \"invalid\"" },
-{ "row": 5, "message": "Missing EmpID" }
-]
+  "result": {
+    "pair": ["101", "102"],
+    "projects": [
+      { "projectId": "1001", "days": 5 }
+    ],
+    "totalDays": 5
+  },
+  "errors": [
+    { "row": 4, "message": "Invalid DateFrom: \"invalid\"" },
+    { "row": 5, "message": "Missing EmpID" }
+  ]
 }
+```
 
 # Tech Stack
 
