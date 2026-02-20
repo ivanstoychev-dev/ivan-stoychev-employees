@@ -24,8 +24,6 @@ export default function App() {
     }
   }, []);
 
-  console.log(output);
-
   return (
     <div className="min-h-screen bg-linear-to-br from-gray-900 via-black to-gray-800 flex justify-center items-start py-10 px-4">
       <div className="bg-gray-900 rounded-sm p-4 lg:p-10 w-full max-w-lg flex flex-col gap-6">
