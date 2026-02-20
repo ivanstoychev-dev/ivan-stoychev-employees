@@ -2,7 +2,7 @@
 
 A **React + TypeScript** app that analyzes which pair of employees has worked together the most across projects. It supports CSV, TSV, JSON, and Excel (XLSX) files with robust error handling and a clean, responsive UI.
 
-## Features
+# Features
 
 - Drag-and-drop file upload (or click to select a file)
 - Supports multiple file formats: CSV, TSV, JSON, Excel (XLSX)
@@ -15,28 +15,28 @@ A **React + TypeScript** app that analyzes which pair of employees has worked to
 - Displays results in a clean, responsive table
 - Fully modular and TypeScript typed
 
-## File Formats & Examples
+# File Formats & Examples
 
-# CSV
+## CSV
 
 empId,projectId,from,to
 101,1001,2023-01-01,2023-01-10
 102,1001,2023-01-05,2023-01-15
 103,1002,2023-02-01,2023-02-10
 
-# JSON
+## JSON
 
 [
 { "employeeId": "101", "projectID": "1001", "dateFrom": "2023-01-01", "dateTo": "2023-01-10" },
 { "empId": "102", "projectId": "1001", "from": "2023-01-05", "to": "2023-01-15" }
 ]
 
-# Excel (XLSX) Example
+## Excel (XLSX) Example
 
 4 columns: empId, projectId, from, to
 Can contain invalid or missing data — will be skipped or reported as errors
 
-## Usage
+# Usage
 
 1.Open the app in your browser.
 2.Drag-and-drop your file or click to select it.
@@ -48,7 +48,7 @@ Can contain invalid or missing data — will be skipped or reported as errors
 - Show the best employee pair and projects
 - Display any errors encountered
 
-# Example Output
+## Example Output
 
 {
 "result": {
@@ -64,7 +64,7 @@ Can contain invalid or missing data — will be skipped or reported as errors
 ]
 }
 
-## Tech Stack
+# Tech Stack
 
 - React
 - TypeScript
@@ -73,7 +73,7 @@ Can contain invalid or missing data — will be skipped or reported as errors
 - CSV / TSV / JSON parsing
 - Fully TypeScript typed for reliability
 
-## Installation & Running
+# Installation & Running
 
 ```bash
 # Clone repository
